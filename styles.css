@@ -12,7 +12,7 @@ body {
   width: 400px;
   height: 500px;
   border-radius: 25px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .calculator-screen {
