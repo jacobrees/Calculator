@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(190, 190, 255);
+}
+
+.calculator-main {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  position: absolute;
+}
+
+.calculator-screen {
+  background-color: rgb(255, 255, 255);
+  width: 370px;
+  height: 120px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-bottom: 3px solid rgb(117,116,166);
+}
+
+.calculator-output {
+    color: rgb(104, 103, 167);
+    font-size: 38px;
+    float: right;
+}
