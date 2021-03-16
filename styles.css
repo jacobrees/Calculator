@@ -23,11 +23,37 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  border-bottom: 3px solid rgb(117,116,166);
+  border-bottom: 3px solid rgb(117, 116, 166);
 }
 
 .calculator-output {
+  color: rgb(104, 103, 167);
+  font-size: 38px;
+  float: right;
+}
+
+.btns-container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.inner-btn {
+    background-color: white;
     color: rgb(104, 103, 167);
-    font-size: 38px;
-    float: right;
+}
+
+.outer-btn {
+    background-color: rgb(104, 103, 167);
+    color: white;
 }
