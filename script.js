@@ -93,6 +93,7 @@ function runOperation(e) {
   } else if (['+', '-', '*', '/', '%'].includes(operation) && ['='].includes(e.currentTarget.dataset.id)) {
     displayValue = operate(operation, prevValue, displayValue);
     calcOutput.innerHTML = displayValue;
+    operation = '+'
     prevValue = displayValue;
     displayValue = '0';
   }
