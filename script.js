@@ -102,8 +102,12 @@ function runOperation(e) {
 
 calcBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-    addToScreen(e);
-    deleteFromScreen(e);
-    runOperation(e);
+    if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '+/-'].includes(e.currentTarget.dataset.id)) {
+      addToScreen(e);
+    } else if (['AC', 'DEL'].includes(e.currentTarget.dataset.id)) {
+      deleteFromScreen(e);
+    } else if (['+', '-', '*', '/', '%', '='].includes(e.currentTarget.dataset.id)) {
+      runOperation(e);
+    }
   });
 });
