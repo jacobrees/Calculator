@@ -53,8 +53,8 @@ function addToScreen(e) {
   } else if (!displayValue.includes('.') && e.currentTarget.dataset.id === '.') {
     displayValue += e.currentTarget.dataset.id;
     calcOutput.innerHTML = displayValue;
-  } else if (e.currentTarget.dataset.id === '+/-') {
-    if (displayValue.slice(0, 1) === '-') {
+  } else if (e.currentTarget.dataset.id === '+/-' && displayValue !== '0') {
+    if (displayValue.slice(0, 1) === '-' ) {
       displayValue = displayValue.slice(1, displayValue.length);
       calcOutput.innerHTML = displayValue;
     } else {

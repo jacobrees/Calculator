@@ -27,7 +27,8 @@ body {
 .calculator-output {
   color: rgb(104, 103, 167);
   font-size: 38px;
-  float: right;
+  text-align: end;
+  word-break: break-all;
 }
 
 .btns-container {
