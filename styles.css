@@ -52,7 +52,15 @@ button {
   color: rgb(104, 103, 167);
 }
 
+.inner-btn:active {
+  background-color: rgb(190, 190, 190);
+}
+
 .outer-btn {
   background-color: rgb(104, 103, 167);
   color: white;
+}
+
+.outer-btn:active {
+  background-color: rgb(64, 63, 107);
 }
